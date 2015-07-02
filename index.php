@@ -6,13 +6,18 @@
 
 <html>
   <head>
+    <style media="screen">
+      input{
+        margin-bottom: 10px;
+      }
+    </style>
   </head>
   <body>
     <div>
       <form class="" action="pdf.php" method="post">
-        <input type="text" name="firstname" placeholder="firstname">
-        <input type="text" name="lastname" placeholder="lastname">
-        <input type="email" name="email" placeholder="email">
+        <input type="text" name="firstname" placeholder="firstname"><br>
+        <input type="text" name="lastname" placeholder="lastname"><br>
+        <input type="email" name="email" placeholder="email"><br>
         <input type="submit" name="submit" value="Submit">
         <input type="reset" name="reset" value="Reset">
       </form>
@@ -60,6 +65,7 @@
         }
 
         // Test Print of data from database
+        /*
         $sql = "SELECT * FROM person";//WHERE dbid = '1'";
 				$query = mysqli_query($conn, $sql);
 
@@ -73,7 +79,7 @@
 
       	    echo '</div>';
       	  }
-      	}
+      	}*/
 
 				mysqli_close($conn);
 
@@ -85,6 +91,8 @@
         //$firstname = $_SESSION['firtname'];
       //  $_POST[$firstname];
 
+        // class version
+        /*
         $document = new document($_POST['firstname'], $_POST['lastname'], $_POST['email']);
 
         if(isset($document)){
@@ -94,6 +102,7 @@
         } else{
           echo "you fucked nigeger";
         }
+        */
         /*
         if(isset($_POST['firstname']) && isset($_POST['lastname']) && isset($_POST['email'])){
           echo 'yes it works';

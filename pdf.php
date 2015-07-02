@@ -1,6 +1,7 @@
 <?php
   session_start();
 
+ // User Inputs
   $name = "Hello, My Name is " . $_POST['firstname'] . " " . $_POST['lastname'];
   $email = $_POST['email'];
 
