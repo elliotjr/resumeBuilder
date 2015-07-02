@@ -1,38 +1,38 @@
 <?php
 class document{
-  private $firstname;
-  private $lastname;
-  private $email;
-}
+  public $firstname;
+  public $lastname;
+  public $email;
 
-public function __construct($firstname, $lastname, $email){
-  this->$firstname = $firstname;
-  this->$lastname = $lastname;
-  this->$email = $email;
-}
+  function __construct($firstname, $lastname, $email){
+    $this->firstname = $firstname;
+    $this->lastname = $lastname;
+    $this->email = $email;
+  }
 
-public function get_first_name(){
-  return $firstname
-}
+  function get_first_name(){
+    return $this->firstname;
+  }
 
-public function get_last_name(){
-  return $lastname
-}
+  function get_last_name(){
+    return $this->lastname;
+  }
 
-public function get_email(){
-  return $email
-}
+  function get_email(){
+    return $this->email;
+  }
 
-public function set_first_name($firstname){
-  this->$firstname = $firstname
-}
+  function set_first_name($firstname){
+    $this->firstname = $firstname;
+  }
 
-public function set_last_name($lastname){
-  this->$lastname = $lastname;
-}
+  function set_last_name($lastname){
+    $this->lastname = $lastname;
+  }
 
-public function set_email($email){
-  this->$email = $email;
+  function set_email($email){
+    $this->email = $email;
+  }
 }
 
 ?>
