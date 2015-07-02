@@ -2,6 +2,140 @@
 html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video{border:0;font-size:100%;font:inherit;vertical-align:baseline;margin:0;padding:0}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}body{line-height:1}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:before,blockquote:after,q:before,q:after{content:none}table{border-collapse:collapse;border-spacing:0}
 /*END CSS RESET*/
 
-body{
-  background-color: pink;
+html{
+    height: 100%;
 }
+
+body{
+    background-image: url(img/bg.png);
+    height: 100%;
+    font-family: lato;
+}
+
+#wrapper{
+    width: 90%;
+    height: 100%;
+    margin: 0 auto;
+}
+
+#header{
+    position: relative;
+    padding: 10px;
+}
+
+#header h1{
+    font-family: cursive;
+    font-size: 4em;
+    text-align: center;
+}
+
+#content{
+    position: relative;
+/*    background-color: rgba(203, 203, 203, 0.56);*/
+    height: 90%;
+}
+
+
+.pagePreview{
+    height: 100%;
+    background-color: pink;
+    width: 50%;
+    float: left;
+}
+
+.tools{
+    height: 100%;
+    width:50%;
+/*    background-color: rgba(157, 157, 157, 0.63);*/
+    float: right;
+}
+
+.inputPair{
+    padding: 20px;
+}
+
+.inputPair p{
+    display: inline;
+}
+
+.inputPair input{
+    display: inline;
+}
+
+.inputs{
+    margin: 20px;
+    height: 90%;
+    
+}
+
+.inputs input[type="text"] {
+    font-size: 1.2em;
+    padding: 2px 4px;
+    font-family: lato;
+    border-radius: 5px;
+    border: solid 2px #6a6a6a;
+    transition: border 0.3s;
+}
+.inputs input[type="text"]:focus,
+.inputs input[type="text"].focus {
+  border: solid 2px #67caff;
+    outline: 0;
+}
+
+#accordion-resizer {
+    padding: 10px;
+    width: 90%;
+    height: 80%;
+    margin: 0 auto;
+}
+
+#accordion{
+    height: 600px;
+}
+
+#accordion h3{
+    text-align: center;
+    background-color: #67caff;
+    padding: 10px;
+    margin: 2px;
+    border-radius: 10px;
+}
+
+#accordion h3:hover{
+    cursor: pointer;
+}
+
+#accordion h3:focus{
+    outline: none;
+}
+
+#accordion textarea{
+    margin: 0 auto;
+    width: 90%;
+    height: 400px;
+    resize: none;
+    display: block;
+}
+
+#accordion textarea:focus{
+    outline: none;
+}
+
+.nextButton{
+    text-align: right;
+    padding: 10px;
+}
+
+.nextButton a{
+    font-size: 1.8em;
+    text-decoration: none;
+    color: black;
+}
+
+.nextButton a:hover{
+    color: white;
+}
+
+
+
+

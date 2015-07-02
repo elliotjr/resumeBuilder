@@ -1,0 +1,75 @@
+<!doctype html>
+<html>
+    <head>
+        <link rel="stylesheet" href="/main.css">
+        <title>Resume Builder</title>
+        <link href='http://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
+        <script src="//code.jquery.com/jquery-1.10.2.js"></script>
+        <script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    </head>
+    <body>
+        <div id="wrapper">
+            <div id="header">
+                <h1>Resume Builder</h1>
+            </div>
+            
+            <div id="content">
+                <div class="pagePreview">
+                    <h1>THIS IS WHERE THE PREVIEW GOES</h1>
+                </div>
+                
+                <div class="tools">
+                    <div id="accordion-resizer" class="ui-widget-content">
+                        <div id="accordion">
+                            <h3>Personal Details</h3>
+                                <div>
+                                    <div class="inputPair">
+                                        <p>Name</p>
+                                        <input id="name" type="text" name="name" value=""/>
+                                    </div>
+                                </div>
+                                
+                                
+                            <h3>Aim</h3>
+                                <div>
+                                    <p>Add an explanation here about what to do for this section of the site.</p>
+                                    <textarea name="" id="aim"></textarea>
+                                </div>
+                            <h3>Education</h3>
+                                <div>
+                                    
+                                </div>
+                            <h3>Experience</h3>
+                                <div>
+                                    
+                                </div>
+                        </div>
+                    
+                    
+                    
+                </div>
+                <div class="nextButton">
+                    <a href="something">Next Step >></a>
+                </div>
+            </div>
+        </div>
+        
+        <script>
+            $(function() {
+                $( "#accordion" ).accordion({
+                heightStyle: "fill"
+                });
+            });
+            
+            $(function() {
+                $( "#accordion-resizer" ).resizable({
+                    minHeight: 140,
+                    minWidth: 200,
+                    resize: function() {
+                        $( "#accordion" ).accordion( "refresh" );
+                    }
+                });
+            });
+        </script>
+    </body>
+</html>
