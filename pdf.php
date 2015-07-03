@@ -2,17 +2,21 @@
   session_start();
 
  // User Inputs
-  $name = "Hello, My Name is " . $_POST['firstname'] . " " . $_POST['lastname'];
+  $name = $_POST['firstname'] . " " . $_POST['lastname'];
   $email = $_POST['email'];
 
 
   require("fpdf/fpdf.php");
   //$pdf = new fpdf();
   $pdf = new fpdf('P','mm','A4');
-  $pdf->SetMargins(0, 0, 0);
+  $pdf->SetMargins(5, 0, 0);
   $pdf->AddPage();
   //$pdf->cMargin = 0;
-  $pdf->Image('template/test.jpg', '', '', '210', '297', 'JPG');
+  $pdf->Image('template/TestTemp.png', '', '', '210', '297', 'PNG');
+
+  $pdf->SetFont("Arial", "", "60");
+  $pdf->Cell(0, 40, $name, 1, 1, "L");
+
 /*
   $pdf->SetFont("Arial", "U", "22");
   $pdf->Cell(0, 10, $name, 1, 1, "C");
