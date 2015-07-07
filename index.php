@@ -14,13 +14,17 @@
   </head>
   <body>
     <div>
-      <form class="" action="pdf.php" method="post">
+      <form class="" action="index.php" method="post">
         <input type="text" name="firstname" placeholder="firstname"><br>
         <input type="text" name="lastname" placeholder="lastname"><br>
         <input type="email" name="email" placeholder="email"><br>
+        <textarea name="aim" id="aim"></textarea><br>
         <input type="submit" name="submit" value="Submit">
         <input type="reset" name="reset" value="Reset">
       </form>
+      <?php
+        echo htmlspecialchars($_POST['aim']);
+       ?>
       <?php
       /*
         $host = "localhost";

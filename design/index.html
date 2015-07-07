@@ -27,29 +27,29 @@
             </div>
 
             <div class="tools">
-                <form action="">
+                <form class="" action="pdf.php" method="post">
                     <div id="accordion-resizer" class="ui-widget-content">
                         <div id="accordion">
                             <h3 id="personalDetailsTab">Personal Details</h3>
                             <div>
                                 <div class="inputPair">
                                     <p>Name</p>
-                                    <input id="name" type="text" name="name" placeholder="First name | Last name" />
+                                    <input type="text" name="name" placeholder="First name | Last name" />
                                 </div>
 
                                 <div class="inputPair">
                                     <p>Age</p>
-                                    <input id="name" type="text" name="name" placeholder="24" />
+                                    <input type="text" name="age" placeholder="24" />
                                 </div>
 
                                 <div class="inputPair">
                                     <p>Email</p>
-                                    <input id="email" type="text" name="email" placeholder="example@email.com" />
+                                    <input type="email" name="email" placeholder="example@email.com" />
                                 </div>
 
                                 <div class="inputPair">
                                     <p>Address</p>
-                                    <input id="address" type="text" name="address" placeholder="Cardboard box" />
+                                    <input type="text" name="address" placeholder="Cardboard box" />
                                 </div>
                             </div>
 
@@ -57,7 +57,7 @@
                             <h3 id="aimTab">Next Step</h3>
                             <div>
                                 <p>Write a personal statement or aim.</p>
-                                <textarea name="" id="aim"></textarea>
+                                <textarea name="aim" id="aim"></textarea>
                             </div>
 
 
@@ -81,14 +81,14 @@
                                     <h2>University</h2>
                                     <div class="inputPair">
                                         <p>University</p>
-                                        <input class="schoolName" type="text" name="schoolName" placeholder="Hogwarts University" />
+                                        <input class="schoolName" type="text" name="uniName" placeholder="Hogwarts University" />
                                     </div>
 
                                     <div class="inputPair">
                                         <p>Years</p>
-                                        <input class="year" type="text" name="startYear" maxlength="4" />
+                                        <input class="year" type="text" name="startYearU" maxlength="4" />
                                         <p>-</p>
-                                        <input class="year" type="text" name="endYear" maxlength="4" />
+                                        <input class="year" type="text" name="endYearU" maxlength="4" />
                                     </div>
                                 </div>
 
@@ -102,14 +102,14 @@
                             <div>
                                 <div class="inputPair">
                                     <p>Company</p>
-                                    <input id="company" type="text" name="company" placeholder="Maccas brah">
+                                    <input type="text" name="company" placeholder="Maccas brah">
                                 </div>
 
                                 <div class="inputPair">
                                     <p>Years</p>
-                                    <input class="year" type="text" name="startYear" maxlength="4" />
+                                    <input class="year" type="text" name="startYearC" maxlength="4" />
                                     <p>-</p>
-                                    <input class="year" type="text" name="endYear" maxlength="4" />
+                                    <input class="year" type="text" name="endYearC" maxlength="4" />
                                 </div>
                             </div>
 
@@ -117,9 +117,10 @@
                         </div>
 
                         <div>
-                            <button id="generateButton" class="hidden">
+                            <button type="submit" name="submit" id="generateButton" class="hidden">
                                 <p>Generate PDF</p>
                             </button>
+                            <input type="submit" name="submit" value="Submit">
                         </div>
 
                     </div>
