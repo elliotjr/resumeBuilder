@@ -12,7 +12,7 @@
   $pdf->SetMargins(5, 0, 0);
   $pdf->AddPage();
   //$pdf->cMargin = 0;
-  $pdf->Image('template/TestTemp.png', '', '', '210', '297', 'PNG');
+  $pdf->Image('template/template.png', '', '', '210', '297', 'PNG');
 
   $pdf->SetFont("Arial", "", "60");
   $pdf->Cell(0, 40, $name, 1, 1, "L");
