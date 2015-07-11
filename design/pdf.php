@@ -32,6 +32,7 @@
   $pdf->Cell(0, 40, $email, 1, 1, "C");
   $pdf->Cell(0, 40, $age, 1, 1, "C");
   $pdf->Cell(0, 40, $address, 1, 1, "C");
+  $pdf->Cell(0, 40, $aim, 1, 1, "C");
   $pdf->Cell(0, 40, $schoolName, 1, 1, "C");
   $pdf->Cell(0, 40, $startYear, 1, 1, "C");
   $pdf->Cell(0, 40, $endYear, 1, 1, "C");
