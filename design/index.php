@@ -42,13 +42,18 @@
                 </div>
 
                 <div class="inputPair">
-                  <p>Age</p>
-                  <input id="name" type="text" name="age" placeholder="24" />
+                  <p>D.O.B</p>
+                  <input id="age" type="text" name="dob" placeholder="24/11/1994" />
                 </div>
 
                 <div class="inputPair">
                   <p>Email</p>
                   <input id="email" type="text" name="email" placeholder="example@email.com" />
+                </div>
+
+                <div class="inputPair">
+                  <p>Phone</p>
+                  <input id="phone" type="text" name="phone" placeholder="xxxx xxx xxx" />
                 </div>
 
                 <div class="inputPair">
